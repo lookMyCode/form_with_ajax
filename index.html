@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="form.js"></script>
+</head>
+<body>
+	<div id="form-container">
+		<p class="row">
+			<label>
+				<span>Imię i nazwisko: </span>
+				<input type="text" name="name" id="name" class="f-inputs" placeholder="Jan Kowalski">
+			</label>
+			<span id="name-warning" class="warning"></span>
+		</p>
+
+		<p class="row">
+			<label>
+				<span>Telefon: </span>
+				<input type="tel" name="tel" id="tel" class="f-inputs" placeholder="+48 555 555 555">
+			</label>
+		</p>
+
+		<p class="row">
+			<label>
+				<span>Email: </span>
+				<input type="email" name="email" id="email" class="f-inputs" placeholder="jan@kowalski.pl">
+			</label>
+			<span id="email-warning" class="warning"></span>
+		</p>
+
+		<p class="row">
+			<label>
+				<span>Miasto / Adres: </span>
+				<input type="text" name="adres" id="adres" class="f-inputs" placeholder="Warszawa">
+			</label>
+		</p>
+
+		<p class="row">
+			<label>
+				<span>Data odbioru: </span>
+				<input type="date" name="first_date" id="first_date" class="f-inputs">
+			</label>
+			<span id="first_date-warning" class="warning"></span>
+		</p>
+
+		<p class="row">
+			<label>
+				<span>Godzina odbioru: </span>
+				<select id="first_time" name="first_time" class="f-inputs">
+					<option>---</option>
+					<option value="0:30">0:30</option>
+					<option value="1:00">1:00</option>
+					<option value="1:30">1:30</option>
+					<option value="2:00">2:00</option>
+					<option value="2:30">2:30</option>
+					<option value="3:00">3:00</option>
+					<option value="3:30">3:30</option>
+					<option value="4:00">4:00</option>
+					<option value="4:30">4:30</option>
+					<option value="5:00">5:00</option>
+					<option value="5:30">5:30</option>
+					<option value="6:00">6:00</option>
+					<option value="6:30">6:30</option>
+					<option value="7:00">7:00</option>
+					<option value="7:30">7:30</option>
+					<option value="8:00">8:00</option>
+					<option value="8:30">8:30</option>
+					<option value="9:00">9:00</option>
+					<option value="9:30">9:30</option>
+					<option value="10:00">10:00</option>
+					<option value="10:30">10:30</option>
+					<option value="11:00">11:00</option>
+					<option value="11:30">11:30</option>
+					<option value="12:00">12:00</option>
+					<option value="12:30">12:30</option>
+					<option value="13:00">13:00</option>
+					<option value="13:30">13:30</option>
+					<option value="14:00">14:00</option>
+					<option value="14:30">14:30</option>
+					<option value="15:00">15:00</option>
+					<option value="15:30">15:30</option>
+					<option value="16:00">16:00</option>
+					<option value="16:30">16:30</option>
+					<option value="17:00">17:00</option>
+					<option value="17:30">17:30</option>
+					<option value="18:00">18:00</option>
+					<option value="18:30">18:30</option>
+					<option value="19:00">19:00</option>
+					<option value="19:30">19:30</option>
+					<option value="20:00">20:00</option>
+					<option value="20:30">20:30</option>
+					<option value="21:00">21:00</option>
+					<option value="21:30">21:30</option>
+					<option value="22:00">22:00</option>
+					<option value="22:30">22:30</option>
+					<option value="23:00">23:00</option>
+					<option value="23:30">23:30</option>
+					<option value="0:00">0:00</option>
+				</select>
+			</label>
+		</p>
+
+		<p class="row">
+			<label>
+				<span>Data zwrotu: </span>
+				<input type="date" name="last_date" id="last_date" class="f-inputs">
+			</label>
+			<span id="last_date-warning" class="warning"></span>
+		</p>
+
+		<p class="row">
+			<label>
+				<span>Godzina zwrotu: </span>
+				<select id="last_time" name="last_time" class="f-inputs">
+					<option>---</option>
+					<option value="0:30">0:30</option>
+					<option value="1:00">1:00</option>
+					<option value="1:30">1:30</option>
+					<option value="2:00">2:00</option>
+					<option value="2:30">2:30</option>
+					<option value="3:00">3:00</option>
+					<option value="3:30">3:30</option>
+					<option value="4:00">4:00</option>
+					<option value="4:30">4:30</option>
+					<option value="5:00">5:00</option>
+					<option value="5:30">5:30</option>
+					<option value="6:00">6:00</option>
+					<option value="6:30">6:30</option>
+					<option value="7:00">7:00</option>
+					<option value="7:30">7:30</option>
+					<option value="8:00">8:00</option>
+					<option value="8:30">8:30</option>
+					<option value="9:00">9:00</option>
+					<option value="9:30">9:30</option>
+					<option value="10:00">10:00</option>
+					<option value="10:30">10:30</option>
+					<option value="11:00">11:00</option>
+					<option value="11:30">11:30</option>
+					<option value="12:00">12:00</option>
+					<option value="12:30">12:30</option>
+					<option value="13:00">13:00</option>
+					<option value="13:30">13:30</option>
+					<option value="14:00">14:00</option>
+					<option value="14:30">14:30</option>
+					<option value="15:00">15:00</option>
+					<option value="15:30">15:30</option>
+					<option value="16:00">16:00</option>
+					<option value="16:30">16:30</option>
+					<option value="17:00">17:00</option>
+					<option value="17:30">17:30</option>
+					<option value="18:00">18:00</option>
+					<option value="18:30">18:30</option>
+					<option value="19:00">19:00</option>
+					<option value="19:30">19:30</option>
+					<option value="20:00">20:00</option>
+					<option value="20:30">20:30</option>
+					<option value="21:00">21:00</option>
+					<option value="21:30">21:30</option>
+					<option value="22:00">22:00</option>
+					<option value="22:30">22:30</option>
+					<option value="23:00">23:00</option>
+					<option value="23:30">23:30</option>
+					<option value="0:00">0:00</option>
+				</select>
+			</label>
+		</p>
+
+		<p class="row">
+			<label>
+				<input type="checkbox" id="f-check" name="f-check" class="inline_block">
+				<span class="inline_block">
+					Wyrażam zgodę na przetwarzanie przez CONSPECTUS AUTO DE LUX GMBH ODDZIAŁ W POLSCE z siedzibą w Warszawie, udostępnionych przeze mnie, w formularzu, danych osobowych, zgodnie z przepisami Ustawy o ochronie danych osobowych z dnia 29 sierpnia 1997r.
+				</span>
+			</label>
+		</p>
+
+		<p class="row">
+			<button id="f-button">Rezerwacja</button>
+		</p>
+
+		<div id="form-result">
+			<span></span>
+		</div>
+	</div>
+</body>
+</html>

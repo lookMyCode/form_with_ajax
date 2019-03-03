@@ -1,0 +1,97 @@
+/* Import font */
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,500');;
+
+/* Reset styles */
+
+/*  */
+body {
+  width: 100%;
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#form-container {
+  width: 90%;
+  height: auto;
+  border: 1px solid #dce0e0;
+  border-radius: 5px;
+  font-size: 16px;
+  font-family: "Work Sans", Helvetica, Arial, sans-serif;
+  letter-spacing: -1px;
+  padding: 15px;
+  margin: 0;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.warning {
+  color: #f00 !important;
+  font-weight: 400 !important;
+  margin-bottom: 10px !important;
+}
+
+.row {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.row span {
+  font-weight: 500;
+  color: #222;
+  font-size: 14px;
+  display: block;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.f-inputs {
+  width: 100%;
+  padding: 5px 7px;
+  border: 1px solid #e5e5e5;
+  border-radius: 5px;
+  color: #555;
+  outline: 0;
+  display: block;
+  margin: 5px 0;
+  box-sizing: border-box;
+}
+.f-inputs:focus {
+  border: 1px solid #999;
+}
+
+.inline_block {
+  display: inline-block;
+}
+
+#f-button {
+  width: 100%;
+  padding: 15px;
+  border-radius: 10px;
+  color: #fff;
+  font-weight: 500;
+  text-align: center;
+  border: 0;
+  outline: 0;
+  display: block;
+  margin: 25px 0;
+  box-sizing: border-box;
+  background-color: #000;
+  transition: all 0.5s;
+  cursor: not-allowed;
+}
+#f-button:hover {
+  background-color: #e2e2e2;
+  color: #111;
+}
+
+#form-result {
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 10px;
+  text-align: center;
+}
